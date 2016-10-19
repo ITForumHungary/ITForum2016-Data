@@ -1,0 +1,11 @@
+﻿<Application
+    x:Class="MeetingPolice.Windows.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MeetingPolice.Windows"
+    xmlns:helpers="using:MeetingPolice.Windows.Helpers"
+    RequestedTheme="Light">
+    <Application.Resources>
+        <helpers:HumidityConverter x:Key="HumidityConverter"></helpers:HumidityConverter>
+    </Application.Resources>
+</Application>

@@ -1,0 +1,9 @@
+This project implements a "meeting room guard" - supposedly to guard meeting rooms from being used without having been properly reserved first.
+It measures humidity in the air (to detect humans).
+Measurements are continuously uploaded into the cloud.
+If humidity rises above a threshold, the device displays a "local warning" to scare off any intruders.
+Using the admin portal, a warning signal can also be sent to the device to activate the "cloud warning".
+
+A good way to finish this demo is to route the events arriving in the IoT Hub, via a Stream Analytics job, into Power BI, where they arrive onto a dashboard that updates real-time.
+https://azure.microsoft.com/en-us/documentation/articles/stream-analytics-power-bi-dashboard/
+(Dashboard updates seem to happen every 10-20 seconds.)

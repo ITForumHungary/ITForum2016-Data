@@ -1,0 +1,9 @@
+SELECT
+    AVG(Humidity) AS Humidity,
+    System.TimeStamp AS [Timestamp]
+INTO
+    powerbi
+FROM
+    eventhub TIMESTAMP BY [Timestamp]
+GROUP BY
+    TUMBLINGWINDOW(ss,1)

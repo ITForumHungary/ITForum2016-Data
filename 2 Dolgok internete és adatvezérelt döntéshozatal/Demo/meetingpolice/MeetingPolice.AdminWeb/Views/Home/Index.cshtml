@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Meeting Police Admin</title>
+</head>
+<body>
+    <div>
+        <a href="/Home/ClearTables">Clear Humidity Logs</a><br />
+        <br />
+        <form method="post">
+            <label>
+                @Html.CheckBox("showWarning")
+                Show Warning
+            </label>
+            <br />
+            <br />
+            <input type="submit" value="Send Command" />
+        </form>
+        <br />
+        <i>@ViewBag.Message</i><br />
+    </div>
+</body>
+</html>
